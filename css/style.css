@@ -1,0 +1,64 @@
+.row .box {margin: 20px 0; height: 300px}
+
+.row .box img{
+    width: 100%;
+    height: 100%;
+    margin: 20px 0;
+    cursor: pointer;
+    transition: all ease-in-out 0.4s;
+    border-radius: 12px;
+}
+
+.row .box img:hover{transform: scale(1.05, 1.05)}
+
+.appear{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.492);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100
+}
+
+.appear div{width: 50%; height: 50%; position: relative}
+
+.appear div img{ border-radius: 12px}
+
+.appear div i{font-size: 23px; cursor: pointer; transition: all ease-in-out 0.2s}
+
+.appear div i:hover{color: rgba(255, 0, 0, 0.721); transform: scale(1.2, 1.2)}
+
+.appear div .xMark{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    top: 15px;
+    left: 95%;
+    z-index: 102;
+}
+.appear div .right{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 49%;
+    left: 95%;
+    z-index: 102;
+}
+.appear div .left{
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 49%;
+    left: 3%;
+    z-index: 102;
+}
+
+.appear img{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 101;
+    transition: opaciy ease-in-out 0.3s;
+}
